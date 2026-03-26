@@ -26,7 +26,7 @@
 
         <p>
             <label for="number">Enter a number:</label>
-            <input type="number" placeholder="enter a number" id="number">
+            <input type="number" placeholder="enter a number" name="num" step ="2" min="1" max="100" id="number">
         </p>
         
         <button>submit</button>
@@ -79,6 +79,28 @@
             <option value="re9">Resident Evil 9</option>
             <option value="FC26">FC26</option>
         </select>
+    </form>
+
+    <p>
+        <label for = "cheese">Amount of Cheese: </label>
+        <input type="range" id="cheese" min="1" max="100" value="75" name="cheese_level">
+    </p>
+
+    <p>
+        <label for="rew">Any special requests?</label>
+        <br>
+        <textarea id="req" rows="10" name="Requests?" cols="20" placeholder="Type Something here"></textarea>
+    </p> 
+
+    <h2>validations demo</h2>
+    <form action="dummy">
+        <label for="first">Enter First Name</label>
+        <input type="text" name="first" id="first" required>
+        <p>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" minlength="4" maxlength="5">
+        </p>
+        <button>submit</button>
     </form>
 </body>
 </html>
